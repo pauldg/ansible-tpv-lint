@@ -22,6 +22,7 @@ See [defaults/main](./default/main.yml) or galaxy's [default/main](https://githu
 | `tpv_dry_run_all_tools` | `false` | If `false` (default), only runs dry-run for tools that are new in the staged configs compared to what is deployed. If `true`, runs dry-run for every non-abstract tool in all local and remote configs. |
 | `tpv_dry_run_remote_configs` | `[]` | List of remote TPV config URLs (e.g. from `tpv-shared-database`) to include when `tpv_dry_run_all_tools: true`. |
 | `tpv_dry_run_user` | `""` | Email of the Galaxy user to impersonate during `tpv dry-run`. Required if your TPV config has a `requires_login` rule (i.e. `if: not user`). |
+| `tpv_dry_run_ignore_errors` | `true` | If `true` (default), dry-run failures are non-fatal and the rest of the role continues. Set to `false` to abort on any dry-run failure. |
 
 ## Playbook Example
 Include role in your Galaxyserver Playbook **after** the galaxyproject.galaxy role (the dirs have to exist already)

@@ -16,3 +16,4 @@ tpv_dry_run: false
 tpv_dry_run_all_tools: false
 tpv_dry_run_remote_configs: []
 tpv_dry_run_user: ""
+tpv_dry_run_ignore_errors: true
